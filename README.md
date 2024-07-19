@@ -21,5 +21,5 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/EventAggregator.git
 
-## Usage
-##H ere's an example of how to use the EventAggregator:
+### Usage
+### Here's an example of how to use the EventAggregator:

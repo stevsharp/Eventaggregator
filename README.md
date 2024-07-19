@@ -18,7 +18,7 @@ A simple and thread-safe event aggregator for .NET 8 applications, allowing for 
 
 Clone the repository:
 
-```bash
+bash
 git clone https://github.com/your-username/EventAggregator.git
 
 ### Usage

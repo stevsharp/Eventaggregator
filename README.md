@@ -57,25 +57,21 @@ public class Program
         Console.WriteLine($"Event Received : {message.Data}");
     }
 }
-Explanation
-Subscribe to an Event:
 
-csharp
-Copy code
+### Explanation
+### Subscribe to an Event:
+
 using SubScription sub = eventAggregator.Subscribe<Message>((x) => Info(x));
 This line subscribes the Info method to Message events. The Subscribe method returns a SubScription object, which, when disposed, will remove this subscription.
 
 Publish an Event:
 
-csharp
-Copy code
-eventAggregator.Publish(new Message("Test"));
+eventAggregator.Publish(new Message("Test"))
+
 This line publishes a Message event. If sub has not been disposed of, the Info method will be called.
 
 Handle the Event:
 
-csharp
-Copy code
 static void Info(Message message)
 {
     Console.WriteLine($"Event Received : {message.Data}");
@@ -84,9 +80,8 @@ This method is called when a Message event is published and prints the event dat
 
 Unsubscribe from the Event:
 
-csharp
-Copy code
 sub.Dispose();
+
 If the Dispose method is called (which happens automatically when exiting the using block), the subscription is removed from the registrationList, and the Info method will no longer be called on subsequent Publish calls.
 
 Contributing

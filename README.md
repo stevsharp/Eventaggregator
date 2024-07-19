@@ -23,3 +23,36 @@ git clone https://github.com/your-username/EventAggregator.git
 
 ### Usage
 ### Here's an example of how to use the EventAggregator:
+
+
+using Eventaggregator;
+using System;
+
+public record Message(string Data);
+
+public class Program
+{
+    static void Main()
+    {
+        try
+        {
+            EventAggregator eventAggregator = new();
+
+            using SubScription sub = eventAggregator.Subscribe<Message>((x) => Info(x));
+
+            eventAggregator.Publish(new Message("Test"));
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        Console.ReadLine();
+    }
+
+    static void Info(Message message)
+    {
+        Console.WriteLine($"Event Received : {message.Data}");
+    }
+}

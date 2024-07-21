@@ -1,0 +1,15 @@
+﻿@inject IEventAggregator eventAggregator;
+
+<h3>Component2</h3>
+
+@code {
+    protected override void OnInitialized()
+    {
+        eventAggregator.Subscribe<Message>((x) => Info(x));
+    }
+
+    static void Info(Message message)
+    {
+        Console.WriteLine($"Event Received : {message.Data}");
+    }
+}

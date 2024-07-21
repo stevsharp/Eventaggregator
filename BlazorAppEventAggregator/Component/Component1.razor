@@ -1,0 +1,15 @@
+﻿@inject IEventAggregator eventAggregator;
+
+<h3>Component1</h3>
+
+
+<button @onclick="@CreateMessage" >Create Message</button>
+
+@code {
+
+    private void CreateMessage()
+    {
+        eventAggregator.Publish(new Message(DateTime.Now.ToLongDateString()));
+    }
+
+}

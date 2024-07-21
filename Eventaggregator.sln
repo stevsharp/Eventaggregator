@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventaggregator", "Eventaggregator\Eventaggregator.csproj", "{DB08FBDA-3255-4AD6-9023-9E0D2A827A40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventaggregator", "Eventaggregator\Eventaggregator.csproj", "{DB08FBDA-3255-4AD6-9023-9E0D2A827A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppEventAggregator", "BlazorAppEventAggregator\BlazorAppEventAggregator.csproj", "{4F53EAF0-122F-46E3-AF95-890B1361888A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DB08FBDA-3255-4AD6-9023-9E0D2A827A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB08FBDA-3255-4AD6-9023-9E0D2A827A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB08FBDA-3255-4AD6-9023-9E0D2A827A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F53EAF0-122F-46E3-AF95-890B1361888A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F53EAF0-122F-46E3-AF95-890B1361888A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F53EAF0-122F-46E3-AF95-890B1361888A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F53EAF0-122F-46E3-AF95-890B1361888A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
